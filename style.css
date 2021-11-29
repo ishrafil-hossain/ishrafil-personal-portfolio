@@ -35,7 +35,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
+    background:var(--crimson);
 }
 
 body{
@@ -136,7 +136,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background:var(--yellow);
+    background:var(--crimson);
 }
 
 #menu{
@@ -489,16 +489,6 @@ header .navbar ul li a:hover{
     padding-right: 1rem;
     color:var(--yellow);
 }
-
-
-/* ************** */
-.top{
-    position: fixed;
-    bottom:7.5rem; right: 2rem;
-    z-index: 100;
-    display: none;
-}
-
 
 
 
