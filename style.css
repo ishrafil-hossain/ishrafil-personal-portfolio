@@ -139,6 +139,19 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
 /* home section design  */
 .home{
     display: flex;
@@ -476,3 +489,87 @@ header .navbar ul li a:hover{
     padding-right: 1rem;
     color:var(--yellow);
 }
+
+
+/* ************** */
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .info{
+        width: 100%;
+    }
+ 
+    .expartise .row .skills .progress{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+ }
+
