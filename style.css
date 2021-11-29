@@ -68,6 +68,7 @@ section{
     background:var(--crimson);
 }
 
+/* header section design  */
 .heading{
     text-align: center;
     margin:0 6rem;
@@ -138,6 +139,7 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
+/* home section design  */
 .home{
     display: flex;
     justify-content: center;
@@ -170,4 +172,75 @@ header .navbar ul li a:hover{
     font-size:2rem;
     color:#eee;
     padding: 1rem 0;
+}
+
+
+/* about section design  */
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:#eee;
+    padding:0 .5rem;
+}
+
+.about .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+    width:20rem;
+    height:18rem;
+    background:crimson;
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+}
+
+/* .about .row .counter .box:hover{
+    width:20.5rem;
+    height:18.5rem;
+} */
+
+.about .row .counter .box span{
+    font-size: 4rem;
+    color:var(--yellow);
+}
+
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color:#fff;
 }
