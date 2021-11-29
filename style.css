@@ -214,33 +214,136 @@ header .navbar ul li a:hover{
     padding:0 .5rem;
 }
 
-.about .row .counter{
-    flex:1 1 48rem;
+.about .row .image{
+    flex:1 1 25rem;
+}
+
+.about .row .image img{
+    height: 85%;
+    width:85%;
+    object-fit: cover;
+    border:0.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+/* expartise area section design  */
+
+.expartise .row{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.about .row .counter .box{
-    width:20rem;
-    height:18rem;
-    background:crimson;
-    text-align: center;
-    padding: 2rem;
-    margin:2rem;
+.expartise .row .skills{
+    flex:1 1 40rem;
 }
 
-/* .about .row .counter .box:hover{
-    width:20.5rem;
-    height:18.5rem;
-} */
-
-.about .row .counter .box span{
-    font-size: 4rem;
-    color:var(--yellow);
+.expartise .row .skills .progress{
+    padding:1rem 6rem;
 }
 
-.about .row .counter .box h3{
+.expartise .row .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem 0;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    color:#eee;
+}
+
+.expartise .row .skills .progress .bar{
+    width:100%;
+    background:#ccc;
+    overflow:hidden;
+    height:1rem;
+    border-radius: 50rem;
+}
+
+.expartise .row .skills .progress .bar span{
+    display:block;
+    height:100%;
+    background:var(--crimson);
+    border-radius: 50rem;
+}
+
+.expartise .row .skills .progress:nth-child(1) .bar span{
+    width:95%;
+}
+
+.expartise .row .skills .progress:nth-child(2) .bar span{
+    width:80%;
+}
+
+.expartise .row .skills .progress:nth-child(3) .bar span{
+    width:75%;
+}
+
+.expartise .row .skills .progress:nth-child(4) .bar span{
+    width:85%;
+}
+
+.expartise .row .skills .progress:nth-child(5) .bar span{
+    width:65%;
+}
+
+.expartise .row .skills .progress:nth-child(6) .bar span{
+    width:85%;
+}
+
+.expartise .row .skills .progress:nth-child(7) .bar span{
+    width:70%;
+}
+
+.expartise .row .skills .progress:nth-child(8) .bar span{
+    width:85%;
+}
+
+.expartise .row .skills .progress:nth-child(9) .bar span{
+    width:75%;
+}
+.expartise .row .skills .progress:nth-child(10) .bar span{
+    width:70%;
+}
+
+.expartise .row .skills .progress:nth-child(11) .bar span{
+    width:75%;
+}
+
+.expartise .row .skills .progress:nth-child(12) .bar span{
+    width:80%;
+}
+
+.expartise .row .box-container{
+    flex:1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.expartise .row .box-container .box{
+    flex:1 1 15rem;
+    background:#fff;
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.expartise .row .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.expartise .row .box-container .box p{
+    font-size: 1.7rem;
+    /* padding-top: .5rem; */
+
+    color:#eee;
+    padding:0 .5rem;
 }
