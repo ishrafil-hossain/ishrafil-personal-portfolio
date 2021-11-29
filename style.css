@@ -101,7 +101,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.5rem solid var(--crimson);
 }
 
 header .user .name{
@@ -136,4 +136,38 @@ header .navbar ul li a{
 
 header .navbar ul li a:hover{
     background:var(--yellow);
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.home h1{
+    font-size:5rem;
+    color:#fff;
+}
+.home h4{
+    font-size:3rem;
+    color:#fff;
+}
+
+.home h1 span{
+    color:var(--yellow);
+}
+.home h4 span{
+    color:var(--yellow);
+}
+
+.home p{
+    font-size:2rem;
+    color:#eee;
+    padding: 1rem 0;
 }
