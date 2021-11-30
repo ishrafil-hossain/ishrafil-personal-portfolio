@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Burner</title>
@@ -34,9 +35,9 @@
 </head>
 
 <body>
-    <h1>Street Burner</h1>
+    <h1 data-aos="fade-left">Street Burner</h1>
 
-    <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+    <div data-aos="slide-down" id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/photo-2.PNG" class="d-block w-100" alt="..." style="width:640px;height:360px">
@@ -61,15 +62,32 @@
     </div>
 
     <ul class="container text-light mt-5 fs-5">
-        <li>Street Burner is a web‑based bike seller application, where a user can find their target products or bike
+        <li data-aos="fade-right">Street Burner is a web‑based bike seller application, where a user can find their
+            target
+            products or bike
             and
             easily buy products.</li>
-        <li>Created a different dashboard for users and admin.</li>
-        <li>Admin : Get full access, make an admin, add or delete products, change order status.Admin route [email:
+        <li data-aos="fade-left">Created a different dashboard for users and admin.</li>
+        <li data-aos="fade-right">Admin : Get full access, make an admin, add or delete products, change order
+            status.Admin route [email:
             admin@admin.com, pass: 123456].</li>
-        <li>Technology : React, React Bootstrap, Node, Express, MongoDB, Firebase.</li>
+        <li data-aos="fade-left">Technology : React, React Bootstrap, Node, Express, MongoDB, Firebase.</li>
     </ul>
 
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 40,
+            delay: 0,
+            duration: 2000,
+            easing: 'ease',
+            once: false,
+            // mirror: false, 
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 
     <!-- bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

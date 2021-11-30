@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Street Burner</title>
+    <title>Easy Camping</title>
     <!-- font awesome cdn link  -->
     <script src="https://kit.fontawesome.com/e149e933c2.js" crossorigin="anonymous"></script>
     <!-- bootstrap  -->
@@ -34,9 +35,9 @@
 </head>
 
 <body>
-    <h1>Easy Camping</h1>
+    <h1 data-aos="fade-left">Easy Camping</h1>
 
-    <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+    <div data-aos="slide-down" id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/photo-1.PNG" class="d-block w-100" alt="..." style="width:640px;height:360px">
@@ -61,12 +62,26 @@
     </div>
 
     <ul class="container text-light mt-5 fs-5">
-        <li>Easy Camping is a responsive web‑based camp booking applications.</li>
-        <li>To book a camp, the user must be logged in.</li>
-        <li>This project‑based on CRUD[Create, Read, Update, Delete] operation.</li>
-        <li>Technology : React, React Bootstrap, Node, Express, MongoDB, Firebase
+        <li data-aos="fade-right">Easy Camping is a responsive web‑based camp booking applications.</li>
+        <li data-aos="fade-left">To book a camp, the user must be logged in.</li>
+        <li data-aos="fade-right">This project‑based on CRUD[Create, Read, Update, Delete] operation.</li>
+        <li data-aos="fade-left">Technology : React, React Bootstrap, Node, Express, MongoDB, Firebase
             .</li>
     </ul>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 40,
+            delay: 0,
+            duration: 2000,
+            easing: 'ease',
+            once: false,
+            // mirror: false, 
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 
     <!-- bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
