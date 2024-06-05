@@ -83,8 +83,10 @@ section{
 }
 
 header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     position: fixed;
-    top:0; left:0;
+    top:0px; left:0;
     z-index: 1000;
     height:100%;
     width:35rem;
@@ -97,8 +99,9 @@ header{
 }
 
 header .user img{
-    height:17rem;
-    width:17rem;
+    margin-top: 2rem;
+    height:14rem;
+    width:14rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -121,17 +124,17 @@ header .navbar{
 
 header .navbar ul{
     list-style: none;
-    padding:1rem 3rem;
+    padding:.5rem 3rem;
 }
 
 
 header .navbar ul li a{
     display: block;
     padding:1rem;
-    margin:1.5rem 0;
+    margin:1rem 0;
     background:#333;
     color:#fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 5rem;
 }
 
@@ -365,7 +368,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content{
     flex:1 1 30rem;
-    padding:4rem;
+    padding:2rem 4rem;
     padding-bottom: 0;
 }
 
@@ -373,7 +376,6 @@ header .navbar ul li a:hover{
     flex:1 1 45rem;
     padding:2rem;
     margin:2rem;
-    margin-bottom: 4rem;
 }
 
 .contact .row form .box{
